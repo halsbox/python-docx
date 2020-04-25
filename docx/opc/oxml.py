@@ -21,6 +21,7 @@ oxml_parser.set_element_class_lookup(element_class_lookup)
 
 nsmap = {
     'ct': NS.OPC_CONTENT_TYPES,
+    'ap': NS.OPC_CONTENT_TYPES,
     'pr': NS.OPC_RELATIONSHIPS,
     'r':  NS.OFC_RELATIONSHIPS,
 }
@@ -286,6 +287,11 @@ ct_namespace = element_class_lookup.get_namespace(nsmap['ct'])
 ct_namespace['Default'] = CT_Default
 ct_namespace['Override'] = CT_Override
 ct_namespace['Types'] = CT_Types
+
+ap_namespace = element_class_lookup.get_namespace(nsmap['ap'])
+ap_namespace['Default'] = CT_Default
+ap_namespace['Override'] = CT_Override
+ap_namespace['Types'] = CT_Types
 
 pr_namespace = element_class_lookup.get_namespace(nsmap['pr'])
 pr_namespace['Relationship'] = CT_Relationship

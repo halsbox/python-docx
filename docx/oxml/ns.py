@@ -9,6 +9,7 @@ from __future__ import absolute_import, print_function, unicode_literals
 
 nsmap = {
     "a": "http://schemas.openxmlformats.org/drawingml/2006/main",
+    "ap":"http://schemas.openxmlformats.org/officeDocument/2006/extended-properties",
     "c": "http://schemas.openxmlformats.org/drawingml/2006/chart",
     "cp": "http://schemas.openxmlformats.org/package/2006/metadata/core-properties",
     "dc": "http://purl.org/dc/elements/1.1/",
